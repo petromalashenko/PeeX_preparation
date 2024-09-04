@@ -9,7 +9,8 @@ WHERE  accountnumber IN ( 100000, 100001 );
 
 -- Log
 SELECT *
-FROM   [dbo].[TransferAudit];
+FROM   [dbo].[TransferAudit]
+order by LogDate desc;
 
 
 -- Initialize Funds Move

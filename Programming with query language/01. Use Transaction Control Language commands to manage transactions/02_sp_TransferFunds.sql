@@ -42,7 +42,7 @@ BEGIN
                 SET @ErrorMessage = 'Insufficient balance or source account does not exist.';
                 THROW 50000, @ErrorMessage, 1;
             END
-            
+
             -- Deposit into the destination account
             UPDATE dbo.BankAccounts
             SET Balance = Balance + @TransferAmount,
